@@ -1,0 +1,52 @@
+/* Estilos gerais para os títulos */
+h1, h2, h3, h5, h6 {
+    color: white;
+    padding: 5px;
+    margin: 0; /* Adicionado para evitar margem indesejada */
+}
+
+/* Estilo específico para h6 */
+h6 {
+    position: relative;
+    bottom: 40px;
+}
+
+/* Rodapé - BoxFooter */
+.BoxFooter {
+    height: 200px;
+    display: flex;
+    flex-direction: column; /* Adicionado para organizar verticalmente */
+    align-items: center;
+    justify-content: center;
+    background-color: #333; /* Adicionado para um fundo mais escuro */
+}
+
+/* Contêiner de texto - TextPort */
+.TextPort {
+    display: flex;
+    flex-direction: column; /* Garantindo que os elementos fiquem empilhados */
+    align-items: center;
+}
+
+/* Ícones */
+.TextPort .icone {
+    font-size: 30px;
+    color: white;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 651px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    /* Ajustando o tamanho dos ícones para telas pequenas */
+    .TextPort .icone {
+        font-size: 25px;
+    }
+
+    /* Diminuindo o padding do h1 e h2 em telas menores */
+    h1, h2 {
+        padding: 5px;
+    }
+}
